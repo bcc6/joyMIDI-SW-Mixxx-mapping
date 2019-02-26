@@ -506,19 +506,23 @@ joyMIDI.wheelPitchBend = function(channel, control, value, status, group) {
 joyMIDI.wheelScratch = function(channel, control, value, status, group) {
     var deck = script.deckFromGroup(group);
     // var newValue = /*joyMIDI.helperAccel*/(value - 64);
-    var newValue = /*joyMIDI.helperAccel*/(value - 64)*2;
+    // var newValue = /*joyMIDI.helperAccel*/(value - 64)*2;
+    var newValue = joyMIDI.helperAccel (value - 64);
 
     if (joyMIDI[group].scratchTimerID) {
         engine.stopTimer(joyMIDI[group].scratchTimerID);
     }
     if (!engine.isScratching(deck)) {
         // engine.scratchEnable(deck, 64, 33+1/3, 1/16, 1/16/32);
-        engine.scratchEnable(deck, 64, 33+1/3, 1/12, 1/12/32);
+        // engine.scratchEnable(deck, 64, 33+1/3, 1/16, 1/16/24);
+        engine.scratchEnable(deck, 64, 33+1/3, 1/16, (1/12)/32);
+
     }
     engine.scratchTick(deck, newValue);
 
     joyMIDI[group].scratchTimerID =
-        engine.beginTimer(200, "joyMIDI.ScratchTimerHandler('" +deck+ "','" +group+ "')", true);
+        // engine.beginTimer(200, "joyMIDI.ScratchTimerHandler('" +deck+ "','" +group+ "')", true);
+        engine.beginTimer(100, "joyMIDI.ScratchTimerHandler('" +deck+ "','" +group+ "')", true);
 }
 
 joyMIDI.ScratchTimerHandler = function(deck, group){
