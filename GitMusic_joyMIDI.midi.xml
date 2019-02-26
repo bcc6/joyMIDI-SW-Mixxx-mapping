@@ -3,7 +3,7 @@
     <info>
         <name>GitMusic joyMIDI</name>
         <author>OzzySan</author>
-        <description>GitMusic protable MIDI controller 2018-08-15</description>
+        <description>GitMusic protable MIDI controller 2019-02-26</description>
         <forums>http://mixxx.org/forums/viewtopic.php?f=7&amp;t=????</forums>
         <wiki>http://mixxx.org/wiki/doku.php/gitmusic_joymidi</wiki>
     </info>
@@ -203,7 +203,7 @@
                 <group>[Channel1]</group>
                 <key>joyMIDI.scratchButton</key>
                 <status>0x90</status>
-                <midino>0x28</midino>
+                <midino>0x2C</midino>
                 <options>
                     <script-binding/>
                 </options>
@@ -212,7 +212,7 @@
                 <group>[Channel1]</group>
                 <key>joyMIDI.scratchButton</key>
                 <status>0x80</status>
-                <midino>0x28</midino>
+                <midino>0x2C</midino>
                 <options>
                     <script-binding/>
                 </options>
@@ -221,7 +221,7 @@
                 <group>[Channel1]</group>
                 <key>joyMIDI.keyButton</key>
                 <status>0x90</status>
-                <midino>0x29</midino>
+                <midino>0x2D</midino>
                 <options>
                     <script-binding/>
                 </options>
@@ -230,7 +230,7 @@
                 <group>[Channel1]</group>
                 <key>joyMIDI.keyButton</key>
                 <status>0x80</status>
-                <midino>0x29</midino>
+                <midino>0x2D</midino>
                 <options>
                     <script-binding/>
                 </options>
@@ -239,7 +239,7 @@
                 <group>[Channel1]</group>
                 <key>joyMIDI.beatgridButton</key>
                 <status>0x90</status>
-                <midino>0x2A</midino>
+                <midino>0x2E</midino>
                 <options>
                     <script-binding/>
                 </options>
@@ -248,7 +248,7 @@
                 <group>[Channel1]</group>
                 <key>joyMIDI.beatgridButton</key>
                 <status>0x80</status>
-                <midino>0x2A</midino>
+                <midino>0x2E</midino>
                 <options>
                     <script-binding/>
                 </options>
@@ -257,7 +257,7 @@
                 <group>[Channel1]</group>
                 <key>joyMIDI.volumeButton</key>
                 <status>0x90</status>
-                <midino>0x2B</midino>
+                <midino>0x2F</midino>
                 <options>
                     <script-binding/>
                 </options>
@@ -266,7 +266,7 @@
                 <group>[Channel1]</group>
                 <key>joyMIDI.volumeButton</key>
                 <status>0x80</status>
-                <midino>0x2B</midino>
+                <midino>0x2F</midino>
                 <options>
                     <script-binding/>
                 </options>
@@ -349,7 +349,7 @@
                 <group>[Channel1]</group>
                 <key>joyMIDI.hotcue1Button</key>
                 <status>0x90</status>
-                <midino>0x38</midino>
+                <midino>0x3C</midino>
                 <options>
                     <script-binding/>
                 </options>
@@ -358,7 +358,7 @@
                 <group>[Channel1]</group>
                 <key>joyMIDI.hotcue1Button</key>
                 <status>0x80</status>
-                <midino>0x38</midino>
+                <midino>0x3C</midino>
                 <options>
                     <script-binding/>
                 </options>
@@ -367,7 +367,7 @@
                 <group>[Channel1]</group>
                 <key>joyMIDI.hotcue2Button</key>
                 <status>0x90</status>
-                <midino>0x39</midino>
+                <midino>0x3D</midino>
                 <options>
                     <script-binding/>
                 </options>
@@ -376,7 +376,7 @@
                 <group>[Channel1]</group>
                 <key>joyMIDI.hotcue2Button</key>
                 <status>0x80</status>
-                <midino>0x39</midino>
+                <midino>0x3D</midino>
                 <options>
                     <script-binding/>
                 </options>
@@ -385,7 +385,7 @@
                 <group>[Channel1]</group>
                 <key>joyMIDI.hotcue3Button</key>
                 <status>0x90</status>
-                <midino>0x3A</midino>
+                <midino>0x3E</midino>
                 <options>
                     <script-binding/>
                 </options>
@@ -394,7 +394,7 @@
                 <group>[Channel1]</group>
                 <key>joyMIDI.hotcue3Button</key>
                 <status>0x80</status>
-                <midino>0x3A</midino>
+                <midino>0x3E</midino>
                 <options>
                     <script-binding/>
                 </options>
@@ -403,7 +403,7 @@
                 <group>[Channel1]</group>
                 <key>joyMIDI.hotcue4Button</key>
                 <status>0x90</status>
-                <midino>0x3B</midino>
+                <midino>0x3F</midino>
                 <options>
                     <script-binding/>
                 </options>
@@ -412,7 +412,7 @@
                 <group>[Channel1]</group>
                 <key>joyMIDI.hotcue4Button</key>
                 <status>0x80</status>
-                <midino>0x3B</midino>
+                <midino>0x3F</midino>
                 <options>
                     <script-binding/>
                 </options>
@@ -495,7 +495,7 @@
                 <group>[Channel1]</group>
                 <key>joyMIDI.loop_0p125_Button</key>
                 <status>0x90</status>
-                <midino>0x48</midino>
+                <midino>0x4C</midino>
                 <options>
                     <script-binding/>
                 </options>
@@ -504,7 +504,7 @@
                 <group>[Channel1]</group>
                 <key>joyMIDI.loop_0p125_Button</key>
                 <status>0x80</status>
-                <midino>0x48</midino>
+                <midino>0x4C</midino>
                 <options>
                     <script-binding/>
                 </options>
@@ -513,7 +513,7 @@
                 <group>[Channel1]</group>
                 <key>joyMIDI.loop_0p25_Button</key>
                 <status>0x90</status>
-                <midino>0x49</midino>
+                <midino>0x4D</midino>
                 <options>
                     <script-binding/>
                 </options>
@@ -522,7 +522,7 @@
                 <group>[Channel1]</group>
                 <key>joyMIDI.loop_0p25_Button</key>
                 <status>0x80</status>
-                <midino>0x49</midino>
+                <midino>0x4D</midino>
                 <options>
                     <script-binding/>
                 </options>
@@ -531,7 +531,7 @@
                 <group>[Channel1]</group>
                 <key>joyMIDI.loop_0p5_Button</key>
                 <status>0x90</status>
-                <midino>0x4A</midino>
+                <midino>0x4E</midino>
                 <options>
                     <script-binding/>
                 </options>
@@ -540,7 +540,7 @@
                 <group>[Channel1]</group>
                 <key>joyMIDI.loop_0p5_Button</key>
                 <status>0x80</status>
-                <midino>0x4A</midino>
+                <midino>0x4E</midino>
                 <options>
                     <script-binding/>
                 </options>
@@ -549,7 +549,7 @@
                 <group>[Channel1]</group>
                 <key>joyMIDI.loop_1_Button</key>
                 <status>0x90</status>
-                <midino>0x4B</midino>
+                <midino>0x4F</midino>
                 <options>
                     <script-binding/>
                 </options>
@@ -558,7 +558,7 @@
                 <group>[Channel1]</group>
                 <key>joyMIDI.loop_1_Button</key>
                 <status>0x80</status>
-                <midino>0x4B</midino>
+                <midino>0x4F</midino>
                 <options>
                     <script-binding/>
                 </options>
@@ -605,7 +605,7 @@
                 <group>[Sampler1]</group>
                 <key>joyMIDI.sampler1Button</key>
                 <status>0x90</status>
-                <midino>0x58</midino>
+                <midino>0x5C</midino>
                 <options>
                     <script-binding/>
                 </options>
@@ -614,7 +614,7 @@
                 <group>[Sampler1]</group>
                 <key>joyMIDI.sampler1Button</key>
                 <status>0x80</status>
-                <midino>0x58</midino>
+                <midino>0x5C</midino>
                 <options>
                     <script-binding/>
                 </options>
@@ -623,7 +623,7 @@
                 <group>[Sampler2]</group>
                 <key>joyMIDI.sampler2Button</key>
                 <status>0x90</status>
-                <midino>0x59</midino>
+                <midino>0x5D</midino>
                 <options>
                     <script-binding/>
                 </options>
@@ -632,7 +632,7 @@
                 <group>[Sampler2]</group>
                 <key>joyMIDI.sampler2Button</key>
                 <status>0x80</status>
-                <midino>0x59</midino>
+                <midino>0x5D</midino>
                 <options>
                     <script-binding/>
                 </options>
@@ -641,7 +641,7 @@
                 <group>[Channel1]</group>
                 <key>joyMIDI.fx1Button</key>
                 <status>0x90</status>
-                <midino>0x5A</midino>
+                <midino>0x5E</midino>
                 <options>
                     <script-binding/>
                 </options>
@@ -650,7 +650,7 @@
                 <group>[Channel1]</group>
                 <key>joyMIDI.fx1Button</key>
                 <status>0x80</status>
-                <midino>0x5A</midino>
+                <midino>0x5E</midino>
                 <options>
                     <script-binding/>
                 </options>
@@ -659,7 +659,7 @@
                 <group>[Channel1]</group>
                 <key>joyMIDI.fx2Button</key>
                 <status>0x90</status>
-                <midino>0x5B</midino>
+                <midino>0x5F</midino>
                 <options>
                     <script-binding/>
                 </options>
@@ -668,7 +668,7 @@
                 <group>[Channel1]</group>
                 <key>joyMIDI.fx2Button</key>
                 <status>0x80</status>
-                <midino>0x5B</midino>
+                <midino>0x5F</midino>
                 <options>
                     <script-binding/>
                 </options>
@@ -679,7 +679,7 @@
                 <group>[Channel2]</group>
                 <key>joyMIDI.shiftButton</key>
                 <status>0x90</status>
-                <midino>0x2C</midino>
+                <midino>0x28</midino>
                 <options>
                     <script-binding/>
                 </options>
@@ -688,7 +688,7 @@
                 <group>[Channel2]</group>
                 <key>joyMIDI.shiftButton</key>
                 <status>0x80</status>
-                <midino>0x2C</midino>
+                <midino>0x28</midino>
                 <options>
                     <script-binding/>
                 </options>
@@ -697,7 +697,7 @@
                 <group>[Channel2]</group>
                 <key>joyMIDI.syncButton</key>
                 <status>0x90</status>
-                <midino>0x2D</midino>
+                <midino>0x29</midino>
                 <options>
                     <script-binding/>
                 </options>
@@ -706,7 +706,7 @@
                 <group>[Channel2]</group>
                 <key>joyMIDI.syncButton</key>
                 <status>0x80</status>
-                <midino>0x2D</midino>
+                <midino>0x29</midino>
                 <options>
                     <script-binding/>
                 </options>
@@ -715,7 +715,7 @@
                 <group>[Channel2]</group>
                 <key>joyMIDI.cueButton</key>
                 <status>0x90</status>
-                <midino>0x2E</midino>
+                <midino>0x2A</midino>
                 <options>
                     <script-binding/>
                 </options>
@@ -724,7 +724,7 @@
                 <group>[Channel2]</group>
                 <key>joyMIDI.cueButton</key>
                 <status>0x80</status>
-                <midino>0x2E</midino>
+                <midino>0x2A</midino>
                 <options>
                     <script-binding/>
                 </options>
@@ -733,7 +733,7 @@
                 <group>[Channel2]</group>
                 <key>joyMIDI.playButton</key>
                 <status>0x90</status>
-                <midino>0x2F</midino>
+                <midino>0x2B</midino>
                 <options>
                     <script-binding/>
                 </options>
@@ -742,7 +742,7 @@
                 <group>[Channel2]</group>
                 <key>joyMIDI.playButton</key>
                 <status>0x80</status>
-                <midino>0x2F</midino>
+                <midino>0x2B</midino>
                 <options>
                     <script-binding/>
                 </options>
@@ -825,7 +825,7 @@
                 <group>[Channel2]</group>
                 <key>joyMIDI.shiftButton</key>
                 <status>0x90</status>
-                <midino>0x3C</midino>
+                <midino>0x38</midino>
                 <options>
                     <script-binding/>
                 </options>
@@ -834,7 +834,7 @@
                 <group>[Channel2]</group>
                 <key>joyMIDI.shiftButton</key>
                 <status>0x80</status>
-                <midino>0x3C</midino>
+                <midino>0x38</midino>
                 <options>
                     <script-binding/>
                 </options>
@@ -843,7 +843,7 @@
                 <group>[Channel2]</group>
                 <key>joyMIDI.filterLowButton</key>
                 <status>0x90</status>
-                <midino>0x3D</midino>
+                <midino>0x39</midino>
                 <options>
                     <script-binding/>
                 </options>
@@ -852,7 +852,7 @@
                 <group>[Channel2]</group>
                 <key>joyMIDI.filterLowButton</key>
                 <status>0x80</status>
-                <midino>0x3D</midino>
+                <midino>0x39</midino>
                 <options>
                     <script-binding/>
                 </options>
@@ -861,7 +861,7 @@
                 <group>[Channel2]</group>
                 <key>joyMIDI.filterMiddleButton</key>
                 <status>0x90</status>
-                <midino>0x3E</midino>
+                <midino>0x3A</midino>
                 <options>
                     <script-binding/>
                 </options>
@@ -870,7 +870,7 @@
                 <group>[Channel2]</group>
                 <key>joyMIDI.filterMiddleButton</key>
                 <status>0x80</status>
-                <midino>0x3E</midino>
+                <midino>0x3A</midino>
                 <options>
                     <script-binding/>
                 </options>
@@ -879,7 +879,7 @@
                 <group>[Channel2]</group>
                 <key>joyMIDI.filterHighButton</key>
                 <status>0x90</status>
-                <midino>0x3F</midino>
+                <midino>0x3B</midino>
                 <options>
                     <script-binding/>
                 </options>
@@ -888,7 +888,7 @@
                 <group>[Channel2]</group>
                 <key>joyMIDI.filterHighButton</key>
                 <status>0x80</status>
-                <midino>0x3F</midino>
+                <midino>0x3B</midino>
                 <options>
                     <script-binding/>
                 </options>
@@ -971,7 +971,7 @@
                 <group>[Channel2]</group>
                 <key>joyMIDI.shiftButton</key>
                 <status>0x90</status>
-                <midino>0x4C</midino>
+                <midino>0x48</midino>
                 <options>
                     <script-binding/>
                 </options>
@@ -980,7 +980,7 @@
                 <group>[Channel2]</group>
                 <key>joyMIDI.shiftButton</key>
                 <status>0x80</status>
-                <midino>0x4C</midino>
+                <midino>0x48</midino>
                 <options>
                     <script-binding/>
                 </options>
@@ -989,7 +989,7 @@
                 <group>[Channel2]</group>
                 <key>joyMIDI.reloopToggleButton</key>
                 <status>0x90</status>
-                <midino>0x4D</midino>
+                <midino>0x49</midino>
                 <options>
                     <script-binding/>
                 </options>
@@ -998,7 +998,7 @@
                 <group>[Channel2]</group>
                 <key>joyMIDI.reloopToggleButton</key>
                 <status>0x80</status>
-                <midino>0x4D</midino>
+                <midino>0x49</midino>
                 <options>
                     <script-binding/>
                 </options>
@@ -1007,7 +1007,7 @@
                 <group>[Channel2]</group>
                 <key>joyMIDI.loopInButton</key>
                 <status>0x90</status>
-                <midino>0x4E</midino>
+                <midino>0x4A</midino>
                 <options>
                     <script-binding/>
                 </options>
@@ -1016,7 +1016,7 @@
                 <group>[Channel2]</group>
                 <key>joyMIDI.loopInButton</key>
                 <status>0x80</status>
-                <midino>0x4E</midino>
+                <midino>0x4A</midino>
                 <options>
                     <script-binding/>
                 </options>
@@ -1025,7 +1025,7 @@
                 <group>[Channel2]</group>
                 <key>joyMIDI.loopOutButton</key>
                 <status>0x90</status>
-                <midino>0x4F</midino>
+                <midino>0x4B</midino>
                 <options>
                     <script-binding/>
                 </options>
@@ -1034,7 +1034,7 @@
                 <group>[Channel2]</group>
                 <key>joyMIDI.loopOutButton</key>
                 <status>0x80</status>
-                <midino>0x4F</midino>
+                <midino>0x4B</midino>
                 <options>
                     <script-binding/>
                 </options>
@@ -1117,7 +1117,7 @@
                 <group>[Channel2]</group>
                 <key>joyMIDI.shiftButton</key>
                 <status>0x90</status>
-                <midino>0x5C</midino>
+                <midino>0x58</midino>
                 <options>
                     <script-binding/>
                 </options>
@@ -1126,7 +1126,7 @@
                 <group>[Channel2]</group>
                 <key>joyMIDI.shiftButton</key>
                 <status>0x80</status>
-                <midino>0x5C</midino>
+                <midino>0x58</midino>
                 <options>
                     <script-binding/>
                 </options>
@@ -1135,7 +1135,7 @@
                 <group>[Channel2]</group>
                 <key>joyMIDI.loadButton</key>
                 <status>0x90</status>
-                <midino>0x5D</midino>
+                <midino>0x59</midino>
                 <options>
                     <script-binding/>
                 </options>
@@ -1144,7 +1144,7 @@
                 <group>[Channel2]</group>
                 <key>joyMIDI.loadButton</key>
                 <status>0x80</status>
-                <midino>0x5D</midino>
+                <midino>0x59</midino>
                 <options>
                     <script-binding/>
                 </options>
