@@ -51,6 +51,33 @@ var RELEASED = 0,
     PRESSED  = 1,
     ADJUSTED = 2;
 
+//----------------------------
+// Constants for scratching
+//----------------------------
+
+/* Internal jog-wheel */
+var forwardFinetune  = 0;
+var backwardFinetune = 0;
+
+// var intervalPerRev = 64;	
+// var rpm = 33 + 1 / 3;
+// var alpha = 1 / 16;
+// var beta = (1 / 12) / 32;
+
+// var scratchDisableTime = 100;
+// var enableAccVal = true;
+
+/* external jog-jweel */
+var forwardFinetune  = 0;
+var backwardFinetune = 1;
+
+var intervalPerRev = 1000;
+var rpm = 33 + 1 / 3;
+var alpha = 1.0 / 8;
+var beta = alpha / 32;
+
+var scratchDisableTime = 150;
+var enableAccVal = false;
 
 
 
@@ -499,30 +526,30 @@ joyMIDI.wheel = function(channel, control, value, status, group) {
 
 joyMIDI.wheelPitchBend = function(channel, control, value, status, group) {
     var newValue = joyMIDI.helperAccel(value - 64);
+
     engine.setValue(group, 'jog', newValue);
     print(group + "jog=" + newValue);
 }
 
 joyMIDI.wheelScratch = function(channel, control, value, status, group) {
     var deck = script.deckFromGroup(group);
-    // var newValue = /*joyMIDI.helperAccel*/(value - 64);
-    // var newValue = /*joyMIDI.helperAccel*/(value - 64)*2;
-    var newValue = joyMIDI.helperAccel (value - 64);
+    var newValue = joyMIDI.helperAccel(value - 64);
+
+    if (newValue > 0) newValue = newValue + forwardFinetune;
+    else              newValue = newValue - backwardFinetune;
 
     if (joyMIDI[group].scratchTimerID) {
         engine.stopTimer(joyMIDI[group].scratchTimerID);
     }
-    if (!engine.isScratching(deck)) {
-        // engine.scratchEnable(deck, 64, 33+1/3, 1/16, 1/16/32);
-        // engine.scratchEnable(deck, 64, 33+1/3, 1/16, 1/16/24);
-        engine.scratchEnable(deck, 64, 33+1/3, 1/16, (1/12)/32);
 
+    if (!engine.isScratching(deck)) {
+        engine.scratchEnable(deck, intervalPerRev, rpm, alpha, beta);
     }
+
     engine.scratchTick(deck, newValue);
 
     joyMIDI[group].scratchTimerID =
-        // engine.beginTimer(200, "joyMIDI.ScratchTimerHandler('" +deck+ "','" +group+ "')", true);
-        engine.beginTimer(100, "joyMIDI.ScratchTimerHandler('" +deck+ "','" +group+ "')", true);
+        engine.beginTimer(scratchDisableTime, "joyMIDI.ScratchTimerHandler('" +deck+ "','" +group+ "')", true);
 }
 
 joyMIDI.ScratchTimerHandler = function(deck, group){
@@ -637,7 +664,12 @@ joyMIDI.helperLimit = function(input, max, min) {
 }
 
 joyMIDI.helperAccel = function(input) {
-    var acc = Math.pow(Math.abs(input), 2);
-    acc = (input > 0) ? acc : -acc;
+	var acc = 0;
+	if (enableAccVal == true) {
+	    acc = Math.pow(Math.abs(input), 2);
+	    acc = (input > 0) ? acc : -acc;
+	} else {
+        acc = input;
+	}
     return acc;
 }
