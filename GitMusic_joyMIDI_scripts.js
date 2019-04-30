@@ -56,8 +56,8 @@ var RELEASED = 0,
 //----------------------------
 
 /* Internal jog-wheel */
-var forwardFinetune  = 0;
-var backwardFinetune = 0;
+// var forwardFinetune  = 0;
+// var backwardFinetune = 0;
 
 // var intervalPerRev = 64;	
 // var rpm = 33 + 1 / 3;
@@ -78,6 +78,13 @@ var beta = alpha / 32;
 
 var scratchDisableTime = 150;
 var enableAccVal = false;
+
+//----------------------------
+// Common variable
+//----------------------------
+var joystickDelay = false;
+var fsrDelay = false;
+
 
 
 
@@ -654,6 +661,62 @@ joyMIDI.wheelFx = function(channel, control, value, status, group, group2, param
 
     newValue = joyMIDI.helperLimit(newValue, 1.0, 0);
     engine.setParameter(group2, param, newValue);
+}
+
+
+//==== Jojstick ============================================================
+joyMIDI.joystick = function(channel, control, value, status, group) {
+
+	if (joystickDelay == false) {
+		/* Delay a while */
+		joystickDelay = true;
+    	engine.beginTimer(300, function() { joystickDelay = false; }, true);
+
+    	var isShift = joyMIDI['[Channel1]'].btnShift == true || joyMIDI['[Channel2]'].btnShift == true;
+    	if (!joyMIDI['[Channel1]'].btnShift) {
+    		/* Joystick only */
+		    if        (control == 0x10) {
+		    	engine.setValue("[Library]", "MoveLeft", true);
+			} else if (control == 0x11) {
+		    	engine.setValue("[Library]", "MoveRight", true);
+			} else if (control == 0x12) {
+		    	engine.setValue("[Library]", "MoveDown", true);
+			} else if (control == 0x13) {
+		    	engine.setValue("[Library]", "MoveUp", true);
+			}
+    	} else {
+    		/* Joystick + shift */
+		    if        (control == 0x10) {
+		    	// Do nothing
+			} else if (control == 0x11) {
+		    	// Do nothing
+			} else if (control == 0x12) {
+		    	engine.setValue("[Library]", "ScrollDown", true);
+			} else if (control == 0x13) {
+		    	engine.setValue("[Library]", "ScrollUp", true);
+			}
+    	}
+	}
+}
+
+
+//==== FSR ============================================================
+joyMIDI.fsr = function(channel, control, value, status, group) {
+
+	if (fsrDelay == false) {
+		/* Delay a while */
+		fsrDelay = true;
+    	engine.beginTimer(300, function() { fsrDelay = false; }, true);
+
+    	var isShift = joyMIDI['[Channel1]'].btnShift == true || joyMIDI['[Channel2]'].btnShift == true;
+    	if (! isShift) {
+    		/* FSR only */
+    		engine.setValue("[Library]", "MoveFocusForward", true);
+    	} else {
+    		/* FSR + shift */
+    		engine.setValue("[Library]", "MoveFocusBackward", true);
+    	}
+	}
 }
 
 //==== Helper =============================================================
