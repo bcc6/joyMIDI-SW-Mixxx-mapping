@@ -549,9 +549,9 @@ joyMIDI.wheelScratch = function(channel, control, value, status, group) {
         engine.stopTimer(joyMIDI[group].scratchTimerID);
     }
 
-    if (!engine.isScratching(deck)) {
+    // if (!engine.isScratching(deck)) {
         engine.scratchEnable(deck, intervalPerRev, rpm, alpha, beta);
-    }
+    // }
 
     engine.scratchTick(deck, newValue);
 
