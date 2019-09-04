@@ -1,15 +1,15 @@
 <?xml version='1.0' encoding='utf-8'?>
 <MixxxControllerPreset mixxxVersion="2.1.0+" schemaVersion="1">
     <info>
-        <name>GitMusic joyMIDI</name>
-        <author>OzzySan</author>
-        <description>GitMusic protable MIDI controller 2019-02-26</description>
+        <name>Soundless joyMIDI</name>
+        <author>Ozzy Chiu</author>
+        <description>Soundless protable MIDI controller 2019-09-04</description>
         <forums>http://mixxx.org/forums/viewtopic.php?f=7&amp;t=????</forums>
-        <wiki>http://mixxx.org/wiki/doku.php/gitmusic_joymidi</wiki>
+        <wiki>http://mixxx.org/wiki/doku.php/Soundless_joyMIDI</wiki>
     </info>
-    <controller id="GitMusic">
+    <controller id="Soundless">
         <scriptfiles>
-            <file functionprefix="joyMIDI" filename="GitMusic_joyMIDI_scripts.js"/>
+            <file functionprefix="joyMIDI" filename="Soundless_joyMIDI_scripts.js"/>
         </scriptfiles>
         <controls>
             <!-- Master -->

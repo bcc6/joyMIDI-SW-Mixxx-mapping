@@ -1,7 +1,7 @@
 /*******************************************************************
- * Ghost Island Tech Co. (GitMusic)
- * Author: OzzySan (ozzy.chc@gmail.com)
- * Version: 2018-08-15
+ * Soundless studio.
+ * Author: Ozzy Chiu (ozzy.chc@gmail.com)
+ * Version: 2019-09-04
  *
  * Variables on joyMIDI.userSetting can be modified by users to suit their preferences
  *******************************************************************/
