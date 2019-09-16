@@ -56,28 +56,28 @@ var RELEASED = 0,
 //----------------------------
 
 /* Internal jog-wheel */
-// var forwardFinetune  = 0;
-// var backwardFinetune = 0;
-
-// var intervalPerRev = 64;	
-// var rpm = 33 + 1 / 3;
-// var alpha = 1 / 16;
-// var beta = (1 / 12) / 32;
-
-// var scratchDisableTime = 100;
-// var enableAccVal = true;
-
-/* external jog-jweel */
 var forwardFinetune  = 0;
-var backwardFinetune = 1;
+var backwardFinetune = 0;
 
-var intervalPerRev = 1000;
+var intervalPerRev = 64;
 var rpm = 33 + 1 / 3;
-var alpha = 1.0 / 8;
-var beta = alpha / 32;
+var alpha = 1 / 16;
+var beta = (1 / 12) / 32;
 
-var scratchDisableTime = 150;
-var enableAccVal = false;
+var scratchDisableTime = 100;
+var enableAccVal = true;
+
+/* external jog-wheel */
+// var forwardFinetune  = 0;
+// var backwardFinetune = 1;
+
+// var intervalPerRev = 1000;
+// var rpm = 33 + 1 / 3;
+// var alpha = 1.0 / 8;
+// var beta = alpha / 32;
+
+// var scratchDisableTime = 150;
+// var enableAccVal = false;
 
 //----------------------------
 // Common variable
