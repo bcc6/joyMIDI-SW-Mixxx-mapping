@@ -109,7 +109,7 @@
                 <group>[Channel1]</group>
                 <key>joyMIDI.wheel</key>
                 <status>0xB0</status>
-                <midino>0x07</midino>
+                <midino>0x0E</midino>
                 <options>
                     <script-binding/>
                 </options>
@@ -120,7 +120,7 @@
                 <group>[Channel2]</group>
                 <key>joyMIDI.wheel</key>
                 <status>0xB0</status>
-                <midino>0x08</midino>
+                <midino>0x0F</midino>
                 <options>
                     <script-binding/>
                 </options>
